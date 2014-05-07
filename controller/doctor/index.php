@@ -126,12 +126,12 @@ EOF;
 				$jsonImg = json_decode(file_get_contents($this->_->api. "/hospital/image?publicId={$j[0]->PublicId}", false, $context), true);
 				if (count($jsonImg) > 0){
 					$imgHtml = array_reduce($jsonImg, function($v, $w){
-						return "{$v}\n<li><img src=\"{$w['Url']}\" width=\"150\" height=\"150\" alt=\"{$w['HospitalName']}の画像です\" itemprop=\"image\"></li>";
+						return "{$v}\n<li><img src=\"{$w['Url']}\" width=\"180\" height=\"180\" alt=\"{$w['HospitalName']}の画像です\" itemprop=\"image\"></li>";
 					});
 				}
 			}
 
-			return ($imgHtml) ?: "<img src=\"/img/noimg.png\" width=\"150\" height=\"150\" alt=\"\">";
+			return ($imgHtml) ?: "<img src=\"/img/noimg.png\" width=\"180\" height=\"180\" alt=\"\">";
 		}
 	}
 

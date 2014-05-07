@@ -54,7 +54,7 @@
 							switch (m.flg){
 							case 'EPARK':
 							case 'EST':
-								return new google.maps.MarkerImage("/img/map_verde.png", new google.maps.Size(21, 34), new google.maps.Point(21 * (i + 1), 34));
+								return new google.maps.MarkerImage("/img/map_verde.png", new google.maps.Size(21, 34), new google.maps.Point(21 * (i + 1), 0));
 								break;
 							default :
 								return new google.maps.MarkerImage("//chart.apis.google.com/chart?cht=it&chs=11x11&chco=cc000090&chf=bg,s,00000000");
@@ -73,7 +73,7 @@
 			};
 
 			var setAnchor = function(i){
-				var no = i;
+				var no = i * 21;
 				return google.maps.event.addListener(marker1, 'click', function(){
 					location.href = "#no" + no;
 					var pos = $('a[name="no' + no + '"]').next().offset().top;

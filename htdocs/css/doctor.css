@@ -77,7 +77,7 @@ article{
 
 .comment{
 	visibility: hidden;
-	margin-top: 0;
+	margin-top: 1em;
 }
 
 a.vote,
@@ -151,7 +151,7 @@ div.detail{
 }
 
 .pic{
-	width: 176px;
+	width: 206px;
 	text-align: center;
 }
 
@@ -160,6 +160,10 @@ div.detail{
 	-webkit-flex: 1;
 	margin-bottom: 10px;
 	padding: 0 10px;
+}
+
+.prof strong{
+	font-size: 1.2em;
 }
 
 .map{
@@ -192,7 +196,7 @@ div.detail{
 
 #map{
 	width: 320px;
-	height: 320px;
+	height: 210px;
 	border: 1px solid #ccc;
 }
 

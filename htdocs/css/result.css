@@ -21,6 +21,11 @@ section.container > .container{
 	width: 760px;
 }
 
+.selling{
+	padding: 4px;
+	background: #c1f7ff;
+}
+
 div.container.result{
 	display: -webkit-flex;
 	display: -moz-flex;

@@ -20,6 +20,8 @@
 
 			<hr>
 
+			{{{func_SellingPoint}}}
+
 			<dl class="feature">
 				<dt>所在地</dt>
 				<dd>{{Address}}</dd>
@@ -46,7 +48,6 @@
 			</table>
 		</div>
 	</section>
-	{{SellingPoint}}
 	<aside class="schedule time a{{PublicId}}" data-iid="{{PublicId}}">
 		<ul>
 			<li><button class="button prev"></button></li>

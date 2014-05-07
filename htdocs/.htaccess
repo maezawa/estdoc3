@@ -1,4 +1,4 @@
-php_value auto_prepend_file "/Users/estdocuser/estdoc2/confs/conf.php"
+php_value auto_prepend_file "/Users/estdocuser/Sites/estdoc3/confs/conf.php"
 #php_value auto_prepend_file "/home/est/confs/conf.php"
 
 RewriteRule ^clinic/([0-9]+)/$ https://estdoc.com/clinic/$1/ [R=301,L]

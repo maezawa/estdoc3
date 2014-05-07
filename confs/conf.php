@@ -28,11 +28,11 @@ $conf = array(
 	'develop' => array(
 		'http'	=>	'http://localhost',
 		'api'		=> 'http://api.estdoc.jp',
-		'base_dir'	=>	'/Users/estdocuser/estdoc2',
-		'class_dir'	=>	'/Users/estdocuser/estdoc2/confs',
-		'parts_dir'	=>	'/Users/estdocuser/estdoc2/parts'. $postfix,
-		'htdocs'				=>	'/Users/estdocuser/estdoc2/htdocs',
-		'controller'		=>	'/Users/estdocuser/estdoc2/controller',
+		'base_dir'	=>	'/Users/estdocuser/Sites/estdoc3',
+		'class_dir'	=>	'/Users/estdocuser/Sites/estdoc3/confs',
+		'parts_dir'	=>	'/Users/estdocuser/Sites/estdoc3/parts'. $postfix,
+		'htdocs'				=>	'/Users/estdocuser/Sites/estdoc3/htdocs',
+		'controller'		=>	'/Users/estdocuser/Sites/estdoc3/controller',
 		'device'				=> $device
 	),
 	'product' => array(

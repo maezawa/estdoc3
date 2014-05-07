@@ -11,7 +11,7 @@ namespace{
 			$param = "id={$_GET['id']}&level=1";
 
 			// Get JSON
-			$json	= json_decode(file_get_contents($this->_->api. "/addresss?{$param}"), true);echo $this->_->api. "/addresss?{$param}";
+			$json	= json_decode(file_get_contents($this->_->api. "/addresss?{$param}"), true);//echo $this->_->api. "/addresss?{$param}";
 			return $json;
 		}
 

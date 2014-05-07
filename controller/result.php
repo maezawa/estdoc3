@@ -98,6 +98,7 @@ namespace{
 				'http' => array('ignore_errors' => true)
 			));
 			$json	= json_decode(file_get_contents($this->_->api. "/t_hospital/search?{$query}", false, $context), true);
+
 			//echo "<br>". $this->_->api. "/t_hospital/search?{$query}";
 			return $json;
 		}
@@ -264,11 +265,15 @@ namespace{
 			return ($str != '') ? "<div class=\"access\"><span>{$str}</span></div>" : null;
 		}
 
-			public function func_Feature($j){	// 医院の特徴HTML生成
+		public function func_Feature($j){	// 医院の特徴HTML生成
 			$feats = $j['Keyword1']. ",". $j['Keyword2'];
 			$feats = preg_replace('/-(,*)|^,|,$/', '', $feats);
 			$str = str_replace(',', '、', $feats);
 			return ($str != '') ? "<dt>特徴</dt>\n<dd>". mb_convert_kana($str, 'KV'). "</dd>" : null;
+		}
+
+		public function func_SellingPoint($j){
+			return ($j['SellingPoint'] != '') ? "<div class=\"selling\">{$j['SellingPoint']}</div>" : null;
 		}
 
 		public function func_ConsultationT($j){	// 診療時間HTML生成
