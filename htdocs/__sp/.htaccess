@@ -1,0 +1,19 @@
+php_value auto_prepend_file "/Users/estdocuser/estdoc2/confs/conf.php"
+
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[^/\.]+$
+RewriteRule .* %{REQUEST_URI}/ [R]
+
+RewriteRule ^doctor/([0-9]+)/$ /doctor/?id=$1 [L]
+RewriteRule ^japan/(.+)/$ /Tlist/index.php?${tl:$1} [QSA]
+RewriteRule ^railway/(.+)/(.+)/$ /Rlist/index.php?pref=${pref2id:$1}&lineId=${rl:$2} [QSA,L]
+RewriteRule ^railway/(.+)/$ /Rlist/index.php?pref=${pref2id:$1}
+RewriteRule ^special/(.+)/$ /special/index.php?id=${feat2id:$1}
+
+## /result/shika/toukyouto/shinjukuku/ookubo/
+RewriteRule ^result/(.+)/(.+)/railway/(.+)/(.+)/$ /result.php?speciality_id=${spec2id:$1}&pref=$2&lineR=$3&stationR=$4 [QSA,L]
+
+RewriteRule ^result/(.+)/(.+)/(.+)/(.+)/$ /result.php?speciality_id=${spec2id:$1}&pref=$2&city=$3&town=$4 [QSA,L]
+RewriteRule ^result/(.+)/(.+)/(.+)/$ /result.php?speciality_id=${spec2id:$1}&pref=$2&city=$3 [QSA,L]
+RewriteRule ^result/(.+)/(.+)/$ /result.php?speciality_id=${spec2id:$1}&pref=$2 [QSA,L]
+RewriteRule ^result/(.+)/$ /result.php?speciality_id=${spec2id:$1} [QSA,L]

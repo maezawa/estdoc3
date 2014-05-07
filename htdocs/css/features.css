@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.copy, .form{
+	border: 1px solid #ccc;
+	padding: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.copy{
+	background: #fff;
+}
+
+.form{
+	padding-bottom: 10px !important;
+	background: #eaf8ff;
+}
+
+.form form{
+	margin: 0 auto !important;
+}
+
+.copy img{
+	width: 150px;
+	display: block;
+	float: left;
+	margin: 0 10px;
+}
+
+.copy div{
+	width: 758px;
+	float: left;
+}
+
+#List{
+	margin-bottom: -1em;
+}
+
+#List li{
+	width: 12em;
+	display: block;
+	float: left;
+	margin: 0 1.4em 1em 0;
+	font-size: 1.2em;
+	line-height: 1.1;
+}
+
+#List a > small{
+	font-size: 50%;
+}

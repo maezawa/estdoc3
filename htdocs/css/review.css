@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+.result{
+	width: 956px;
+	border: 1px solid #ececec;
+	background: #fff;
+	padding: 10px !important;
+}
+
+.eval{
+	width: 956px;
+	display: block !important;
+	border: 1px solid #ececec;
+	background: #fff;
+	padding: 10px !important;
+	margin: 2em 0 2em 2em;
+	overflow: auto;
+}
+
+.form {
+	padding-bottom: 10px !important;
+	background: #eaf8ff;
+	width: 938px !important;
+	border: 1px solid #ccc;
+	padding: 20px !important;
+	margin-bottom: 20px !important;
+}
+
+.hospital {
+	display: -webkit-flexbox;
+	display: -moz-flexbox;
+	display: -ms-flexbox;
+	display: -o-flexbox;
+	display: flex;
+	width: 100% !important;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #F8BA6B;
+}
+
+.hospital .profile{
+	flex: 1;
+}
+
+/* Tracking Progress Bar styles */
+ol.steps{
+	margin: 0 0 1.5em 0;
+	padding: 0;
+	list-style: none;
+}
+
+.steps li{
+	display: inline-block;
+	text-align: center;
+	line-height: 2.2em;
+	font-size: 1.8em;
+	width: 33%;
+}
+
+.steps li.done{
+	border-bottom: 4px solid #A9E80A;
+}
+
+.steps li.undone{
+	color: silver;
+	border-bottom: 4px solid silver
+}
+
+.steps li:after{
+	content: "\00a0\00a0";
+}
+
+.steps li:before{
+	position: relative;
+	bottom: -1.6em;
+	float: left;
+	left: 48%;
+	line-height: 1em;
+}
+
+.steps li.done:before{
+	content: "\2713";
+	color: white;
+	background-color: #A9E80A;
+	height: 1.2em;
+	width: 1.2em;
+	line-height: 1.2em;
+	border: none;
+	border-radius: 1.2em;
+}
+
+.steps li.undone{
+	content: "\039F";
+	color: silver;
+	font-size: 1.5em;
+	bottom: -1.6em;
+	line-height: 2.5em;
+}
+
+h1{
+	border: none;
+}
+
+h1:before{
+	content: none;
+}
+
+.radios{
+	margin: 0 0 0 2em;
+	flex: 1;
+}
+
+.radios dt{
+	width: 11em;
+	float: left;
+	margin-bottom: 1.25em;
+	padding-top: 4px;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.radios dt:not(:first-child){
+	clear: both;
+}
+
+.radios dd{
+	margin: 0;
+	padding-left: 10em;
+}
+
+.radios label{
+	width: 5.5em;
+	font-size: 1.1em;
+}
+
+.confirm{
+	padding-top: 4px;
+	margin-bottom: 1.2em !important;
+	font-size: 1.25em;
+}
+
+.comment{
+	flex: 1;
+}
+
+#Comment{
+	margin: 0 0 2em 1em;
+	width: 38.5em;
+	height: 8em;
+}
+
+#toStep2:after,
+#toStep3:after{
+	margin-left: 2em;
+	content: '＞';
+}
+
+#toStep3{
+	width: 25%;
+	display: inline-block;
+}
+
+#toStep1:before{
+	margin-right: 2em;
+	content: '＜';
+}
+
+#Step2,
+#Step3{
+	display: none;
+}

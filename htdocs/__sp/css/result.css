@@ -1,0 +1,394 @@
+/* 検索結果概要　*/
+#summary{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 10px;
+	border-radius: 3px;
+	border: 1px solid #1da1da;
+}
+
+#summary strong{
+	font-size: 1.6em;
+	color: #cc0000;
+}
+
+#summary h2{
+	margin: 0;
+	background: none;
+	color: #363636;
+}
+
+/* 絞り込み検索 */
+#Filter, #Detail{
+	display: none;
+}
+
+/* 地図 */
+#totalmap, #eachmap{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+
+/* Main部分 */
+#content{
+	border-top: 1px solid #1eb0e9;
+	background: #fff;
+	padding: 10px;
+	overflow: auto;
+}
+
+/* 全体地図 */
+#TMap.on{
+	visibility: visible;
+}
+
+#TMap{
+	visibility: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 60px;
+	background: rgba(0, 0, 0, 0.75);
+	z-index: 76;
+}
+
+/* 個別医院の地図 */
+#EMap.on{
+	visibility: visible;
+}
+
+#EMap{
+	visibility: hidden;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 60px;
+	z-index: 77;
+}
+
+#EMap button{
+	position: absolute;
+	z-index: 78;
+	width: 100%;
+	bottom: 60px;
+	left: 0;
+	border-radius: 0;
+}
+
+/* 医院情報 */
+.list{
+	/*//background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3ede8), color-stop(10%,#ffffff));*/
+	/*//display: none;*/
+	background: #fff;
+	padding: 10px 5px;
+	margin: 5px 0;
+	border-top: 1px solid rgba(29, 161, 218, 0.25);
+	border-bottom: 1px solid rgba(29, 161, 218, 0.25);
+}
+
+div.list.EPARK{
+	display: block !important;
+}
+
+.pin{
+	width: 30px;
+	height: 34px;
+	float: left;
+	display: block;
+}
+
+.hospital{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+}
+
+.hospital .pic{
+	width: 110px;
+	text-align: center;
+	padding: 0 1em 0 0;
+}
+
+.pic a.button, .pic .button{
+	width: 100%;
+	margin: 0 0 0.5em 0;
+}
+
+.hospital .profile{
+	flex: 1;
+	line-height: 1.2;
+}
+
+.profile > div.title_container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+}
+
+div.title_container h3{
+	font-size: 1.5em;
+	margin: 0;
+}
+
+div.title_container h4{
+	font-weight: normal;
+	margin: 0 0 0.2em 0;
+}
+
+div.title_container > div.vote{
+	width: 7em;
+	margin: 8px 8px 0 0;
+	text-align: right;
+	flex: 1;
+	-webkit-flex: 1;
+}
+
+.profile strong{
+	font-size: 1.2em;
+}
+
+.profile ul{
+	margin: 5px;
+	padding: 3px 5px;
+	background: #cae5ff;
+	font-size: 0.9em;
+}
+
+dl.feature{
+	margin: 10px 0;
+	font-size: 1em;
+}
+
+dl.feature dt{
+	float: left;
+	width: 4.5em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+dl.feature dd{
+	padding-left: 4.75em;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+
+.hos_pic{
+	margin-bottom: 1em;
+	border: 1px solid #ccc;
+}
+
+#Research{
+	margin: 0;
+	padding: 0 5px;
+	text-align: center;
+}
+
+#Research .button{
+	width: 32.9%;
+}
+
+.button.icon_reduce:before{
+	font-family: FontAwesome;
+	content: '\f00e';
+	color: #fff;
+	margin-right: 0.5em;
+}
+
+.button.icon_re:before{
+	font-family: FontAwesome;
+	content: '\f053';
+	color: #fff;
+	margin-right: 0.5em;
+}
+
+.button.icon_map:before{
+	font-family: FontAwesome;
+	content: '\f041';
+	color: #fff;
+	margin-right: 0.5em;
+}
+
+/* タイムテーブル styles */
+aside.schedule{
+	display: none;
+	position: relative;
+	height: 0;
+	overflow-y: hidden;
+	width: 100%;
+	background: #F3EDE8;
+	border-top: none;
+	margin-top: 5px;
+}
+
+aside.schedule.on{
+	display: block;
+	height: auto;
+	-webkit-transition: height 150ms ease-in;
+}
+
+.schedule ul{
+	width: 100%;
+	float: left;
+	height: 2em;
+}
+
+.schedule ul li{
+	width: 12%;
+	height: 1em;
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-align: center;
+	line-height: 1;
+}
+
+.schedule ul > li:first-child,
+.schedule ul > li:last-child{
+	width: 8%;
+	border: none;
+}
+
+.button.ppc{
+	margin-top: 10px;
+	width: 100%;
+}
+
+.button.navRsv.ppc:before{
+	font-family: FontAwesome;
+	content: '\f098';
+	margin-right: 0.5em;
+}
+
+.button.prev,
+.button.next{
+	border: none;
+	border-radius: 0;
+	width: 5.5em;
+	height: 2.2em;
+	background-color: #1da1da;
+	background-position: 50%;
+}
+
+.button.prev:hover,
+.button.next:hover{
+	background-color: #1fbff9;
+}
+
+.button.to_doctor,
+section .button.map{
+	padding: 9px 0.5em;
+}
+
+.button.to_doctor:before{
+	margin-right: 0.5em;
+	font-family: FontAwesome;
+	content: '\f0f0';
+}
+
+.button.navRsv{
+	display: block;
+	margin-top: 1.25em;
+}
+
+.button.navRsv:before{
+	font-family: FontAwesome;
+	content: '\f00e';
+	margin-right: 0.5em;
+}
+
+.time_btns{
+	padding: 10px;
+}
+
+.time_btns a{
+	width: 5em;
+	margin: 2px 0.25em;
+}
+
+#Pagenation{
+	text-align: center;
+	margin-top: 2em;
+}
+
+#Pagenation select{
+	width: 10em;
+	height: 2.5em;
+}
+
+@media screen and (max-width: 590px){
+#Logo img{
+	padding-top: 0.5em;
+	width: 110px;
+}
+
+ul.tab li{
+	padding: 0.5em 1em;
+}
+
+div.title_container h3{
+	font-size: 1.3em;
+	letter-spacing: -0.1em;
+}
+
+aside br{
+	clear: none;
+}
+
+.schedule ul{
+	width: 6em;
+	height: auto;
+}
+
+.schedule ul li {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0.75em;
+	float: none;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.schedule ul > li:first-child, .schedule ul > li:last-child{
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+
+.button.prev,
+.button.next{
+	width: 100%;
+}
+
+.time_btns{
+	margin: -20px 0 0 6em;
+}
+
+.time_btns a{
+	width: 47%;
+}
+}
+
+@media screen and (max-width: 500px){
+#summary{
+	width: 95%;
+	padding: 10px 5px;
+}
+
+#Research{
+	font-size: 90%;
+	padding: 0;
+}
+
+#Research .button{
+	width: 32%;
+	padding: 9px 0.5em;
+}
+}

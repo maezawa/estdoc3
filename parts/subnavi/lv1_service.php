@@ -1,0 +1,1 @@
+<?php include($_->parts_dir. '/subnavi/lv1_japan.php'); ?>

@@ -1,0 +1,398 @@
+@charset "UTF-8";
+
+#Prefs{
+	display: block;
+	width: 619px;
+	height: 452px;
+	margin: 0 auto;
+	position: relative;
+	background: transparent url('/img/prefs.png') no-repeat;
+}
+
+#Prefs a{
+	position: absolute;
+	display: block;
+	text-align: center;
+	color: #fff;
+	line-height: 1.1;
+}
+
+#Prefs a:hover{
+	background: rgba(255, 255, 255, 0.08);
+}
+
+#Prefs a[href*=hokkaido]{
+	left: 147px;
+	top: 0px;
+	width: 190px;
+	height: 140px;
+	line-height: 140px;
+}
+
+#Prefs a[href*=aomori]{
+	left: 475px;
+	top: 33px;
+	width: 144px;
+	height: 39px;
+	line-height: 39px;
+}
+
+#Prefs a[href*=iwate]{
+	left: 546px;
+	top: 72px;
+	width: 72px;
+	height: 51px;
+	line-height: 51px;
+}
+
+#Prefs a[href*=miyagi]{
+	left: 546px;
+	top: 124px;
+	width: 72px;
+	height: 51px;
+	line-height: 51px;
+}
+
+#Prefs a[href*=akita]{
+	left: 475px;
+	top: 73px;
+	width: 71px;
+	height: 51px;
+	line-height: 51px;
+}
+
+#Prefs a[href*=yamagata]{
+	left: 474px;
+	top: 125px;
+	width: 71px;
+	height: 51px;
+	line-height: 51px;
+}
+
+#Prefs a[href*=fukushima]{
+	left: 499px;
+	top: 177px;
+	width: 119px;
+	height: 51px;
+	line-height: 51px;
+}
+
+#Prefs a[href*=ibaraki]{
+	left: 570px;
+	top: 229px;
+	width: 48px;
+	height: 71px;
+	line-height: 71px;
+}
+
+#Prefs a[href*=tochigi]{
+	left: 523px;
+	top: 229px;
+	width: 46px;
+	height: 54px;
+	line-height: 54px;
+}
+
+#Prefs a[href*=gunma]{
+	left: 475px;
+	top: 229px;
+	width: 47px;
+	height: 54px;
+	line-height: 54px;
+}
+
+#Prefs a[href*=saitama]{
+	left: 475px;
+	top: 285px;
+	width: 94px;
+	height: 46px;
+	line-height: 46px;
+}
+
+#Prefs a[href*=chiba]{
+	left: 571px;
+	top: 302px;
+	width: 48px;
+	height: 123px;
+	line-height: 123px;
+}
+
+#Prefs a[href*=toukyouto]{
+	left: 502px;
+	top: 332px;
+	width: 67px;
+	height: 42px;
+	line-height: 42px;
+}
+
+#Prefs a[href*=kanagawa]{
+	left: 502px;
+	top: 375px;
+	width: 47px;
+	height: 37px;
+	line-height: 37px;
+}
+
+#Prefs a[href*=niigata]{
+	left: 431px;
+	top: 163px;
+	width: 66px;
+	height: 66px;
+	line-height: 89px;
+}
+
+#Prefs a[href*=toyama]{
+	left: 395px;
+	top: 175px;
+	width: 34px;
+	height: 53px;
+	line-height: 53px;
+}
+
+#Prefs a[href*=ishikawa]{
+	left: 358px;
+	top: 147px;
+	width: 36px;
+	height: 81px;
+	line-height: 81px;
+}
+
+#Prefs a[href*=fukui]{
+	left: 329px;
+	top: 229px;
+	width: 65px;
+	height: 52px;
+	line-height: 75px;
+}
+
+#Prefs a[href*=yamanashi]{
+	left: 458px;
+	top: 332px;
+	width: 43px;
+	height: 42px;
+	line-height: 42px;
+}
+
+#Prefs a[href*=nagano]{
+	left: 431px;
+	top: 229px;
+	width: 43px;
+	height: 144px;
+	line-height: 144px;
+}
+
+#Prefs a[href*=gifu]{
+	left: 396px;
+	top: 229px;
+	width: 34px;
+	height: 145px;
+	line-height: 145px;
+}
+
+#Prefs a[href*=shizuoka]{
+	left: 444px;
+	top: 375px;
+	width: 58px;
+	height: 52px;
+	line-height: 52px;
+}
+
+#Prefs a[href*=aichi]{
+	left: 396px;
+	top: 376px;
+	width: 46px;
+	height: 51px;
+	line-height: 51px;
+}
+
+#Prefs a[href*=mie]{
+	left: 360px;
+	top: 333px;
+	width: 35px;
+	height: 119px;
+	line-height: 119px;
+}
+
+#Prefs a[href*=shiga]{
+	left: 359px;
+	top: 284px;
+	width: 35px;
+	height: 47px;
+	line-height: 47px;
+}
+
+#Prefs a[href*=kyoutofu]{
+	left: 295px;
+	top: 253px;
+	width: 63px;
+	height: 78px;
+	line-height: 105px;
+}
+
+#Prefs a[href*=osakafu]{
+	left: 295px;
+	top: 332px;
+	width: 33px;
+	height: 67px;
+	line-height: 67px;
+}
+
+#Prefs a[href*=hyougoken]{
+	left: 260px;
+	top: 253px;
+	width: 34px;
+	height: 104px;
+	line-height: 104px;
+}
+
+#Prefs a[href*=nara]{
+	left: 329px;
+	top: 332px;
+	width: 29px;
+	height: 92px;
+	line-height: 92px;
+}
+
+#Prefs a[href*=wakayama]{
+	left: 295px;
+	top: 400px;
+	width: 63px;
+	height: 52px;
+	line-height: 70px;
+}
+
+#Prefs a[href*=tottori]{
+	left: 221px;
+	top: 253px;
+	width: 37px;
+	height: 46px;
+	line-height: 46px;
+}
+
+#Prefs a[href*=shimane]{
+	left: 183px;
+	top: 253px;
+	width: 37px;
+	height: 46px;
+	line-height: 46px;
+}
+
+#Prefs a[href*=okayama]{
+	left: 221px;
+	top: 300px;
+	width: 37px;
+	height: 57px;
+	line-height: 57px;
+}
+
+#Prefs a[href*=hiroshima]{
+	left: 183px;
+	top: 300px;
+	width: 37px;
+	height: 57px;
+	line-height: 57px;
+}
+
+#Prefs a[href*=yamaguchi]{
+	left: 147px;
+	top: 253px;
+	width: 35px;
+	height: 104px;
+	line-height: 104px;
+}
+
+#Prefs a[href*=tokushima]{
+	left: 214px;
+	top: 412px;
+	width: 67px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#Prefs a[href*=kagawa]{
+	left: 214px;
+	top: 371px;
+	width: 67px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#Prefs a[href*=ehime]{
+	left: 147px;
+	top: 371px;
+	width: 66px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#Prefs a[href*=kouchiken]{
+	left: 147px;
+	top: 412px;
+	width: 66px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#Prefs a[href*=fukuoka]{
+	left: 54px;
+	top: 253px;
+	width: 81px;
+	height: 47px;
+	line-height: 47px;
+}
+
+#Prefs a[href*=saga]{
+	left: 27px;
+	top: 253px;
+	width: 26px;
+	height: 60px;
+	line-height: 60px;
+}
+
+#Prefs a[href*=nagasaki]{
+	left: 0;
+	top: 253px;
+	width: 26px;
+	height: 60px;
+	line-height: 60px;
+}
+
+#Prefs a[href*=kumamoto]{
+	left: 54px;
+	top: 301px;
+	width: 33px;
+	height: 96px;
+	line-height: 96px;
+}
+
+#Prefs a[href*=oita]{
+	left: 88px;
+	top: 301px;
+	width: 47px;
+	height: 49px;
+	line-height: 49px;
+}
+
+#Prefs a[href*=miyazaki]{
+	left: 88px;
+	top: 351px;
+	width: 47px;
+	height: 46px;
+	line-height: 46px;
+}
+
+#Prefs a[href*=kagoshima]{
+	left: 54px;
+	top: 398px;
+	width: 81px;
+	height: 54px;
+	line-height: 54px;
+}
+
+#Prefs a[href*=okinawa]{
+	left: 0;
+	top: 397px;
+	width: 33px;
+	height: 55px;
+	line-height: 55px;
+}

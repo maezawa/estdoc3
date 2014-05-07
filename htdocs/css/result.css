@@ -1,0 +1,569 @@
+section.container > .container{
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-box;
+	display: -o-box;
+	display: box;
+	margin: 0;
+	padding: 0;
+}
+
+.sub{
+	box-sizing: border-box;
+	width: 230px;
+	margin: 0 20px 0 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+.main{
+	box-sizing: border-box;
+	width: 760px;
+}
+
+div.container.result{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+/* 検索結果概要　*/
+#summary{
+	background: #fff;
+	padding: 10px 10px 0 10px;
+}
+
+#summary strong{
+	font-size: 1.6em;
+	color: #cc0000;
+}
+
+#summary p{
+	background: #ecfafd;
+	padding: 0.5em 0;
+}
+
+#summary .button{
+	padding: 0.75em 1em;
+}
+
+/* 地図 */
+#map{
+	box-sizing: border-box;
+	width: 100%;
+	height: 300px;
+	border: 1em solid #fff;
+	border-top: none;
+}
+
+/* 検索結果 */
+#result{
+	width: 100%;
+	margin-top: 15px;
+}
+
+/* 表示切り換えタブ in 検索結果 */
+#tabArea{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+#tabArea .flex{
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+#tabArea .btnArea{
+	width: 20em;
+	text-align: right;
+}
+
+ul.tab{
+	width: 28em;
+}
+
+ul.tab li{
+	width: 9em;
+	height: 1.5em;
+	text-align: center;
+	padding: 3px 2em 0 2em;
+	border: 1px solid #1eb0e9;
+	border-bottom: none;
+	background: #fff;
+	color: #1da1da;
+}
+
+ul.tab > li.tabOn{
+	background: #1eb0e9;
+	color: #fff;
+}
+
+/* Main部分 */
+#content{
+	/*border-top: 1px solid #1eb0e9;*/
+	background: #fff;
+	padding: 10px;
+	overflow: auto;
+}
+
+/* 並び替え */
+#sort{
+	position: relative;
+	height: 3em;
+}
+
+#sort > h5{
+	position: relative;
+	width: 9.5em;
+	height: 1em;
+	background: #1da1da;
+	color: #fff;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 7px 1em;
+	float: left;
+}
+
+#sort > h5:after{
+	content: '>';
+	position: absolute;
+	right: 10px;
+}
+
+#sort > ul{
+	float: left;
+}
+
+#sort > ul > a{
+	color: #1da1da;
+	cursor: pointer;
+}
+
+#sort > ul > a:hover{
+	color: #fff;
+}
+
+#sort > ul > a:hover > li{
+	background: #1da1da;
+}
+
+#sort > ul li{
+	width: 140px;
+	height: 1em;
+	padding: 6px 0;
+	float: left;
+	border: 1px solid #1da1da;
+	text-align: center;
+	margin-left: -1px;
+	line-height: 1;
+}
+
+#sort > ul li.more{
+	border: none;
+	font-size: 0.9em;
+	text-align: left;
+	margin-left: 1em;
+	padding: 11px 0 0 0;
+}
+
+/* カレンダー in 並べ替え */
+#calendar{
+	position: absolute;
+	z-index: 1;
+	width: 17.5em;
+	height: 177px;;
+	background: #3ba4d6;
+	padding: 10px;
+	top: 26px;
+	right: 34px;
+	box-shadow: 0 0 4px rgba(0,0,0,0.9);
+	display: none;
+}
+
+
+/* 医院情報 */
+.list{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3ede8), color-stop(10%,#ffffff));
+	width: 731px;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #1da1da;
+}
+
+div.list.EPARK{
+	display: block !important;
+}
+
+.pin{
+	width: 30px;
+	height: 34px;
+	float: left;
+	display: block;
+}
+
+.hospital{
+	margin: 0;
+	padding: 5px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.hospital .pic{
+	width: 151px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.pic > a:first-child{
+	display: block;
+	max-height: 150px;
+	overflow: hidden;
+	border: 1px solid #1da1da;
+}
+
+.pic img{
+	min-width: 150px;
+	height: 150px;
+}
+
+.hospital .profile{
+	width: 536px;
+	line-height: 1.3;
+	-webkit-flex: 1;
+	flex: 1;
+}
+
+.profile > div.title_container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+}
+
+div.title_container h3{
+	font-size: 1.75em;
+	margin: 0 0 0.4em 0;
+}
+
+div.title_container h4{
+	font-weight: normal;
+	margin: 0 0 0.2em 0;
+}
+
+div.title_container > div.vote{
+	width: 7em;
+	margin: 8px 8px 0 0;
+	text-align: right;
+	flex: 1;
+	-webkit-flex: 1;
+}
+
+.profile hr{
+	border: 1px solid #1da1da;
+	margin: 3px 0 10px -10px;
+}
+
+.profile strong{
+	font-size: 1.2em;
+}
+
+.profile ul{
+	margin: 5px;
+	padding: 3px 5px;
+	background: #cae5ff;
+	font-size: 0.9em;
+}
+
+dl.feature{
+	margin: 10px 0;
+	font-size: 1em;
+}
+
+dl.feature dt{
+	float: left;
+	width: 4.5em;
+	font-weight: bold;
+}
+
+.access{
+	-webkit-flex: 1;
+	flex: 1;
+	text-align: right;
+}
+
+.access span{
+	border: 1px solid #1da1da;
+	color: #1da1da;
+	background: #f1fbff;
+	padding: 3px 1em;
+	margin: 5px 5px 0 0;
+	font-weight: bold;
+	height: 1em;
+	box-shadow: 0 0 4px rgba(29, 161, 218, 0.30) inset;
+}
+
+/* タイムテーブル styles */
+aside.schedule{
+	/*display: none;*/
+	position: relative;
+	height: 0;
+	overflow-y: hidden;
+	width: 685px;
+	background: #F3EDE8;
+	border-top: none;
+	margin: 5px 0 0 35px;
+}
+
+.schedule ul{
+	float: left;
+	height: 2em;
+}
+
+.schedule ul li{
+	width: 79px;
+	height: 2.2em;
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-align: center;
+	line-height: 1;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.schedule ul li.d{
+	padding: 0.5em 0;
+	cursor: pointer;
+	border: 1px solid #1da1da;
+	border-left: none;
+	background: #fff;
+	color: #1da1da;
+}
+
+.schedule ul li.selectedDay,
+.schedule ul li.d:hover{
+	background: #1da1da;
+	color: #fff;
+}
+
+.schedule ul > li:first-child,
+.schedule ul > li:last-child{
+	width: 66px;
+	border: none;
+}
+
+.schedule ul li.saturday{
+	color: #5a5a5a;
+}
+
+.schedule ul li.holiday{
+	color: #A5678D;
+}
+
+.button.ppc{
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0.5em 0 0 0;
+	padding: 0.5em 1em;
+	font-weight: normal;
+	line-height: 1.25;
+}
+
+.button.show_timeTable{
+	width: 100%;
+	height: auto;
+	line-height: 1.2;
+	margin: 0.5em 0 0 0;
+	font-weight: normal;
+}
+
+.button.prev,
+.button.next{
+	border: none;
+	border-radius: 0;
+	width: 5.5em;
+	height: 2.2em;
+	background-color: #1da1da;
+	background-position: 50%;
+}
+
+.button.prev:hover,
+.button.next:hover{
+	background-color: #1fbff9;
+}
+
+.time_btns{
+	padding: 10px;
+}
+
+.time_btns a{
+	width: 5em;
+	margin: 2px 0;
+}
+
+/* 診療時間 */
+#consultationHours{
+	border-collapse: collapse;
+}
+
+#consultationHours th:nth-child(n + 1):not(:nth-child(n + 6)){
+	background: #ccc;
+	/*background: rgba(131, 182, 137, 0.7);*/
+}
+
+#consultationHours th:nth-child(6){
+	background: rgba(59, 164, 214, 0.7);
+}
+
+#consultationHours th:nth-child(7),
+#consultationHours th:nth-child(8){
+	background: rgba(213, 156, 191, 0.7);
+}
+
+#consultationHours td:nth-child(n + 1):not(:nth-child(n + 6)){
+	background: #efefef;
+	/*background: rgba(131, 182, 137, 0.1);*/
+}
+
+#consultationHours td:nth-child(6){
+	background: rgba(59, 164, 214, 0.1);
+}
+
+#consultationHours td:nth-child(7),
+#consultationHours td:nth-child(8){
+	background: rgba(213, 156, 191, 0.1);
+}
+
+#consultationHours th,
+#consultationHours td{
+	letter-spacing: -0.5px;
+	border: 1px solid #ccc;
+	padding: 2px 5px;
+	text-align: center;
+	font-size: 11px;
+	width: 6.5em;
+	line-height: 1.25;
+	word-wrap: break-word;
+}
+
+#consultationHours td{
+	padding: 4px 5px;
+	text-align: center;
+}
+
+/* UI::Pagenation */
+#Pagenation{
+	border: 1px solid #ccc;
+	padding: 4px 10px;
+	border-radius: 3px;
+	background: #f6fdff;
+	margin: 30px auto 10px auto;
+	text-align: center;
+}
+
+#Pagenation ul{
+	display: inline-block;
+	height: 3em;
+}
+
+#Pagenation li{
+	display: block;
+	position: relative;
+	float: left;
+	width: 4em;
+	border-bottom: 2px solid silver;
+	padding: 4px 0;
+	text-align: center;
+}
+
+#Pagenation a:first-child > li,
+#Pagenation a:last-child > li,
+#Pagenation a:nth-child(2) > li,
+#Pagenation a:nth-last-child(2) > li,
+#Pagenation span:first-child > li,
+#Pagenation span:last-child > li,
+#Pagenation span:nth-child(2) > li,
+#Pagenation span:nth-last-child(2) > li{
+	border-bottom: none;
+	letter-spacing: -0.1em;
+}
+
+#Pagenation li.now{
+	padding-bottom: 4px;
+	border-bottom: 2px solid #1da1da;
+}
+
+#Pagenation a{
+	float: left;
+	color: #1da1da;
+	font-size: 0.9em;
+}
+
+#Pagenation span{
+	font-size: 0.9em;
+}
+
+#Pagenation li.off:hover{
+	text-decoration: underline;
+}
+
+#Pagenation li:hover:not(.now){
+	text-decoration: underline;
+	background: #f0f0f0;
+}
+
+#Pagenation li.now span{
+	background: #1da1da;
+	color: #fff;
+	padding: 0.5em 1em;
+	font-size: 0.9em;
+}
+
+.calendar-box{
+	background: #1da1da;
+	padding: 1em;
+	border-radius: 3px;
+	box-shadow: 0 0 3px 3px rgba(0,0,0,0.2);
+	z-index: 80;
+	display: none;
+}
+
+.calendar-box table{
+	font-size: 1.2em;
+}
+
+.calendar-box a{
+	color: #fff;
+}
+
+.button.calendar-cancel{
+	display: block;
+	margin: 10px auto 0 auto;
+	padding: 9px 2em;
+	height: auto !important;
+}
+
+a.filter{
+	cursor: pointer;
+}
+
+.bgverde{
+	width: 21px;
+	background: transparent url('/img/map_verde.png') no-repeat;
+}
+
+.bgbleu{
+	width: 21px;
+	background: transparent url('/img/map_bleu.png') no-repeat;
+}

@@ -1,0 +1,340 @@
+@charset "UTF-8";
+
+h1{
+	font-size: 1.75em;
+}
+
+h2{
+	margin: 1em 0 0 0;
+	background: #18c59a;
+	padding: 0.25em;
+	color: #fff;
+}
+
+.container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+}
+
+.pic{
+	padding: 0 1em;
+}
+
+.titles{
+	flex: 1;
+}
+
+.button.map{
+	margin-left: 1em;
+}
+
+.button.tel:before{
+	font-family: FontAwesome;
+	content: '\f095';
+	margin-right: 0.5em;
+}
+
+.consultationHours{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+}
+
+.consultationHours dl{
+	width: 25%;
+	display: table;
+	border-collapse: collapse;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.consultationHours dt,
+.consultationHours dd{
+	display: table-row;
+	border: 1px solid #ccc;
+}
+
+.consultationHours dt{
+	text-align: center;
+	background: rgba(131, 182, 137, 0.7);
+	font-weight: bold;
+}
+
+.consultationHours dd{
+	display: table-cell;
+	margin: 0;
+	height: 3em;
+	padding: 0.25em;
+	line-height: 1;
+	background: rgba(131, 182, 137, 0.1);
+	vertical-align: middle;
+	text-align: center;
+}
+
+.consultationHours dt:after{
+	clear: both;
+}
+
+.consultationHours dt.sat{
+	background: rgba(59, 164, 214, 0.7);
+}
+
+.consultationHours dt.hol{
+	background: rgba(213, 156, 191, 0.7);
+}
+
+.consultationHours dd.sat{
+	background: rgba(59, 164, 214, 0.2);
+}
+
+.consultationHours dd.hol{
+	background: rgba(213, 156, 191, 0.2);
+}
+
+.tomap{
+	margin-left: 1em;
+}
+
+#Services, #Address,
+#Address dl,
+#Services dt, #Address dt,
+#Services dd, #Address dd{
+	display: block;
+}
+
+#Services dt,
+#Address dt{
+	width: 100% !important;
+	text-align: left !important;
+}
+
+#Address dd, #Services dd,
+#Address dt, #Services dt{
+	margin: 0;
+	padding: 0.25em 0 0.25em 1em;
+}
+
+#Detail dl{
+	display: table-row;
+	width: 100%;
+}
+
+#Detail dt, #Detail dd{
+	display: table-cell;
+	padding: 0.25em 0 0.25em 1em;
+}
+
+#Address dt, #Detail dt{
+	background: #129171;
+	color: #fff;
+	width: 10em;
+	text-align: right;
+	padding-right: 1em;
+}
+
+#Services dt{
+	margin: 0;
+	background: #18c59a;
+	padding: 0.25em;
+	color: #fff;
+	font-size: 125%;
+	font-weight: bold;
+}
+
+#HosMap.on{
+	visibility: visible;
+}
+
+#HosMap{
+	visibility: hidden;
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 60px;
+	z-index: 77;
+}
+
+#HosMap button{
+	position: absolute;
+	z-index: 78;
+	width: 100%;
+	bottom: 60px;
+	left: 0;
+	border-radius: 0;
+}
+
+#map{
+	width: 100%;
+	height: 100%;
+}
+
+/* タイムテーブル styles */
+aside.schedule{
+	background: #F3EDE8;
+	border-top: none;
+	margin-top: 5px;
+}
+
+
+.schedule ul{
+	width: 100%;
+	float: left;
+	height: 2em;
+}
+
+.schedule ul li{
+	width: 12.86%;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	text-align: center;
+	line-height: 1;
+}
+
+.schedule ul li.d{
+	padding: 0.5em 0;
+	cursor: pointer;
+	border: 1px solid #1da1da;
+	border-left: none;
+	background: #fff;
+	color: #1da1da;
+}
+
+.schedule ul li.selectedDay,
+.schedule ul li.d:hover{
+	background: #1da1da;
+	color: #fff;
+}
+
+.schedule ul > li:first-child,
+.schedule ul > li:last-child{
+	width: 30px;
+	border: none;
+}
+
+.time_btns{
+	padding: 10px;
+}
+
+.time_btns a{
+	width: 7.8em;
+	margin: 2px 0.25em;
+}
+
+a.tel{
+	margin: 0.5em 0 !important;
+	display: block !important;
+}
+
+
+@media screen and (max-width: 590px){
+.consultationHours{
+	width: 100%;
+	display: block;
+}
+
+.consultationHours dl{
+	width: 100%;
+	font-size: 100%;
+}
+
+.consultationHours dt{
+	display: block;
+	width: 2em;
+	border: none;
+	font-weight: bold;
+	padding: 0.25em 0 0.25em 0;
+	margin-bottom: 1px;
+}
+
+.consultationHours dd{
+	width: 100%;
+	height: auto;
+	border: none;
+	padding: 0.25em 0 0.25em 1em;
+	margin-bottom: 1px;
+	text-align: left;
+}
+
+#Address,
+#Address dl,
+#Address dt,
+#Address dd,
+#Detail,
+#Detail dl,
+#Detail dt,
+#Detail dd{
+	display: block;
+}
+
+#Address dt,
+#Detail dt{
+	width: 100%;
+	text-align: left;
+	font-size: 100%;
+}
+
+#Detail dt > br{
+	display: none;
+}
+
+#Address dd,
+#Detail dd{
+	margin-left: 0;
+}
+
+a.tel + br{
+	display: none;
+}
+
+aside.schedule{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: flex;
+}
+
+aside br{
+	display: none;
+}
+
+.schedule ul{
+	width: 6em;
+	height: auto;
+}
+
+.schedule ul li {
+	width: auto;
+	height: auto;
+	margin: 0;
+	padding: 0.75em;
+	float: none;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+
+.schedule ul > li:first-child, .schedule ul > li:last-child{
+	width: auto;
+	height: auto;
+	padding: 0;
+}
+
+.button.prev,
+.button.next{
+	width: 100%;
+}
+
+.time_btns{
+	flex: 1;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.time_btns a{
+	width: 47%;
+}
+
+}

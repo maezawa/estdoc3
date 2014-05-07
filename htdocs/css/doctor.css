@@ -1,0 +1,437 @@
+@charset "UTF-8";
+
+/* Layout Styles */
+h1{
+	display: inline-table;
+	font-size: 1.75em;
+	margin: 0;
+	border: none;
+}
+
+h1:before{
+	content: none;
+	padding-right: 0;
+}
+
+h1 > small{
+	font-size: 0.5em;
+	font-weight: normal;
+}
+
+h2{
+	border-bottom: 2px solid #0190d6;
+	padding-bottom: 2px;
+}
+
+h2:nth-child(n+2){
+	margin-top: 1.5em;
+}
+
+div.title{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	background: #fff;
+	border-bottom: 2px solid #0190d6;
+	margin: 0;
+	padding: 1em 0 5px 1em !important;
+}
+
+.on_foot{
+	margin-left: 4em !important;
+}
+
+.on_foot > span{
+	height: 1.5em;
+}
+
+.div_tel{
+	margin-right: 1em;
+}
+
+.div_tt{
+	flex: 1;
+}
+
+strong.tel{
+	width: 100%;
+	display: inline-block;
+	font-size: 1.5em;
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+strong.span_tel{
+	font-size: 1.5em;
+	color: #ff5f70;
+}
+
+div.drProf,
+article{
+	/*border: 1px solid #ececec;*/
+	background: #fff;
+	padding: 10px !important;
+}
+
+.comment{
+	visibility: hidden;
+	margin-top: 0;
+}
+
+a.vote,
+a.interview{
+	margin-top: 10px;
+	display: block;
+	height: 15px;
+}
+
+a.vote{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+button.moreHospital{
+	width: 7em;
+	display: block;
+	margin: -1.5em 0 1em auto;
+	line-height: 1;
+}
+
+button.moreDoctor{
+	line-height: 1;
+}
+
+ul#feature li, .on_foot > span{
+	border: 1px solid #1da1da;
+	color: #1da1da;
+	background: #f1fbff;
+	float: left;
+	padding: 3px 1em;
+	margin: 5px 5px 0 0;
+	font-weight: bold;
+	box-shadow: 0 0 4px rgba(29, 161, 218, 0.30) inset;
+}
+
+.info.container,
+.interview.container{
+	width: 946px;
+	padding: 5px 0;
+	margin: 0;
+}
+
+.info > dl{
+	width: 40%;
+	/*border-radius: 3px;*/
+	/*border: 1px solid #eee;*/
+	padding: 5px;
+	margin-right: 10px;
+	float: left;
+}
+
+.info > dl > dd{
+	margin-left: 1em;
+}
+
+article h3{
+	font-weight: normal;
+}
+
+caption{
+	text-align: left;
+}
+
+div.detail{
+	border: 2px solid #0190d6;
+	border-radius: 0 0 3px 3px;
+	border-top: none;
+	background: #eaf8ff;
+	padding: 20px 10px 10px 10px !important;
+}
+
+.pic{
+	width: 176px;
+	text-align: center;
+}
+
+.prof{
+	flex: 1;
+	-webkit-flex: 1;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+
+.map{
+	width: 320px;
+}
+
+.map dl{
+	margin-top: 10px;
+	padding: 5px;
+	background: #eaf8ff;
+}
+
+.map dl > dt{
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.navRsv.doctor{
+	width: 290px;
+}
+
+.map dl > dd{
+	margin-left: 1em;
+}
+
+#timeTable{
+	width: 70%;
+	margin-right: 20px;
+}
+
+#map{
+	width: 320px;
+	height: 320px;
+	border: 1px solid #ccc;
+}
+
+/* UI::スケジュール表(table) */
+#schedule{
+	width: 100%;
+	font-size: 1em;
+	overflow-y: hidden;
+}
+
+#schedule th,
+#schedule td{
+	border: 2px solid #fff;
+	width: 10em;
+}
+
+#schedule th:first-child,
+#schedule th:last-child{
+	width: 36px;
+	background: #fafafa;
+}
+
+#schedule th{
+	text-align: center;
+	height: 1.25em;
+}
+
+#schedule th:nth-child(n + 2):not(:nth-child(n + 7)){
+	background: rgba(131, 182, 137, 0.7);
+}
+
+#schedule th:nth-child(7){
+	background: rgba(59, 164, 214, 0.7);
+}
+
+#schedule th:nth-child(8){
+	background: rgba(213, 156, 191, 0.7);
+}
+
+#schedule td:nth-child(n + 1):not(:nth-child(n + 7)){
+	background: rgba(131, 182, 137, 0.1);
+}
+
+#schedule td:nth-child(7){
+	background: rgba(59, 164, 214, 0.1);
+}
+
+#schedule td:nth-child(8){
+	background: rgba(213, 156, 191, 0.1);
+}
+
+#schedule td{
+	vertical-align: top;
+}
+
+#schedule td > a,
+#schedule td > button{
+	display: block;
+	margin: 8px auto;
+	text-align: center;
+	padding: 6px 1em;
+}
+
+#schedule td > a.hide{
+	display: none;
+}
+
+#schedule td > a.on{
+	display: block;
+}
+
+#schedule td > button{
+	font-size: 80%;
+	margin: 2em auto 1em auto;
+}
+
+ul#doctorList{
+	width: 100%;
+	margin: 0 60px;
+}
+
+ul#doctorList li{
+	float: left;
+	/*margin-top: 2em;*/
+	overflow-y: visible;
+}
+
+ul#doctorList li:nth-child(4n+1){
+	clear: both;
+}
+
+ul#doctorList li:nth-child(odd){
+	width: 110px;
+	text-align: center;
+}
+
+ul#doctorList li:nth-child(even){
+	width: 27em;
+	margin-right: 2em;
+}
+
+/* UI::詳細情報表(table) */
+#detail{
+	width: 640px;
+	margin-right: 20px;
+	font-size: 1em;
+}
+
+#detail th,
+#detail td{
+	padding: 0.75em;
+}
+
+#detail th{
+	border-bottom: 1px solid #fff;
+	background: #0190d6;
+	width: 9em;
+	color: #fff;
+	text-align: left;
+	font-weight: normal;
+}
+
+#detail tr:last-child > th{
+	border-bottom: 1px solid #0190d6;
+}
+
+#detail td{
+	border: 1px solid #0190d6;
+	background: #fff;
+}
+
+/* UI::診療時間(table) */
+#consultationHours{
+	font-size: 1em;
+	border-collapse: collapse;
+	width: 32em;
+	table-layout:fixed;
+}
+
+#consultationHours > caption{
+	color: #363636;
+	text-align: left;
+}
+
+#consultationHours th,
+#consultationHours td{
+	letter-spacing: -0.5px;
+	border: 1px solid #ccc;
+	padding: 1px 3px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 90%;
+	width: 6.6em;
+	word-wrap:break-word;
+}
+
+#consultationHours td{
+	line-height: 1.2;
+	padding: 0.5em 0.25em;
+}
+
+#consultationHours th{
+	background: #eaf8ff;
+	font-weight: bold;
+}
+
+#schedule th:nth-child(n + 2):not(:nth-child(n + 7)),
+#consultationHours th:nth-child(n + 1):not(:nth-child(n + 6)){
+	/*background: rgba(131, 182, 137, 0.7);*/
+	background: #ccc;
+}
+
+#schedule th:nth-child(7),
+#consultationHours th:nth-child(6){
+	background: rgba(59, 164, 214, 0.7);
+}
+
+#schedule th:nth-child(8),
+#consultationHours th:nth-child(7),
+#consultationHours th:nth-child(8){
+	background: rgba(213, 156, 191, 0.7);
+}
+
+#schedule td:nth-child(n + 1):not(:nth-child(n + 7)),
+#consultationHours td:nth-child(n + 1):not(:nth-child(n + 6)){
+	/*background: rgba(131, 182, 137, 0.1);*/
+	background: #efefef;
+}
+
+#schedule td:nth-child(7),
+#consultationHours td:nth-child(6){
+	background: rgba(59, 164, 214, 0.1);
+}
+
+#schedule td:nth-child(8),
+#consultationHours td:nth-child(7),
+#consultationHours td:nth-child(8){
+	background: rgba(213, 156, 191, 0.1);
+}
+
+ul.thumb li:nth-child(n+2){
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+}
+
+ul.thumb li:nth-child(n+2) img{
+	width: 50px;
+	height: 50px;
+}
+
+#LightBox{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(240, 241, 203, 0.4);
+	z-index: 80;
+	display: table;
+}
+
+#LightBox > div{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+
+#LightBox img{
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 0 7px #aaa;
+	background: #fff;
+}
+
+#LightBox button{
+	display: inline-block;
+	text-align: right;
+	margin-top: 2em;
+	font-size: 1em;
+	height: auto !important;
+	padding: 9px 2em;
+}
