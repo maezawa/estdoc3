@@ -54,7 +54,7 @@
 							switch (m.flg){
 							case 'EPARK':
 							case 'EST':
-								return new google.maps.MarkerImage("/img/map_verde.png", new google.maps.Size(21, 34), new google.maps.Point(21 * (i + 1), 0));
+								return new google.maps.MarkerImage("/img/map_verde.png", new google.maps.Size(21, 34), new google.maps.Point(21 * i, 0));
 								break;
 							default :
 								return new google.maps.MarkerImage("//chart.apis.google.com/chart?cht=it&chs=11x11&chco=cc000090&chf=bg,s,00000000");
