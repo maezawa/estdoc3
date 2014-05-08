@@ -37,6 +37,43 @@ section{
 	color: #83c825;
 }
 
+
+#counter strong{
+	font-size: 2.75em;
+	letter-spacing: 0.1em;
+}
+
+#counter dl{
+	margin-top: 2em;
+	padding-top: 1em;
+	border-top: 1px solid #ccc;
+}
+
+#counter dt{
+	width: 9em;
+	margin-top: 1em;
+	float: left;
+}
+
+#counter dd{
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 0 0 1em 8em;
+	margin: 0 0 1em 0;
+	border-bottom: 1px solid #ccc;
+}
+
+#counter dd > strong{
+	display: inline-block;
+	padding: 8px;
+	border-radius: 24px;
+	background: #83c825;
+	color: #fff;
+	font-size: 1em;
+	margin-right: 0.75em;
+	letter-spacing: 0.1em;
+}
+
 .p{
 	padding: 0 0 4em 0;
 	border-bottom: 1px solid #ccc;
@@ -52,10 +89,30 @@ section{
 	right: 10%;
 }
 
+.container.misc{
+	display: table;
+	height: 220px;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+
+.container.misc div{
+	width: 33%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	box-sizing: border-box;
+	border-right: 1px solid #ccc;
+}
+
+.container.misc div:last-child{
+	border-right: none;
+}
+
 .service{
 	position: relative;
 	overflow: hidden;
-
 }
 
 .service div{
@@ -74,6 +131,7 @@ section{
 	transition-timing-function: ease-in-out;
 	height: 2.25em;
 }
+
 .service_links.on{
 	height: 21em;
 }
@@ -297,50 +355,6 @@ input[type="checkbox"]:checked:before{
 	font-size: 1.7em;
 	line-height: 1;
 }
-/* sub */
-#sub > div{
-	padding: 0.5em;
-}
-
-#counter{
-	/*background: #1da1da;*/
-}
-
-#counter strong{
-	font-size: 2.75em;
-	letter-spacing: 0.1em;
-}
-
-#counter dl{
-	margin-top: 2em;
-	padding-top: 1em;
-	border-top: 1px solid #ccc;
-}
-
-#counter dt{
-	width: 9em;
-	margin-top: 1em;
-	float: left;
-}
-
-#counter dd{
-	font-size: 1.2em;
-	font-weight: bold;
-	padding: 0 0 1em 8em;
-	margin: 0 0 1em 0;
-	border-bottom: 1px solid #ccc;
-}
-
-#counter dd > strong{
-	display: inline-block;
-	padding: 8px;
-	border-radius: 24px;
-	background: #83c825;
-	color: #fff;
-	font-size: 1em;
-	margin-right: 0.75em;
-	letter-spacing: 0.1em;
-}
 
 /* button */
 .button{
@@ -352,6 +366,21 @@ input[type="checkbox"]:checked:before{
 	top: 0.5em;
 	right: 0.5em;
 	width: 8em;
+}
+
+.service_index {
+	width: 10em;
+	margin: 2px 1px;
+	background: #efefef;
+	color: #666;
+	border: 1px dotted #ccc;
+	border-radius: 3px;
+	font-size: 1.0em;
+}
+
+.service_index:hover{
+	background: #1da1da;
+	color: #fff;
 }
 
 
@@ -393,13 +422,6 @@ h2.detail:before{
 	margin: 0 0 0.75em -5.5em;
 	font-size: 1.5em;
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-	/*text-shadow: -1px -1px rgba(255, 255, 255, 0.75), 1px -1px rgba(255, 255, 255, 0.75), -1px 1px rgba(255, 255, 255, 0.75), 1px 1px rgba(255, 255, 255, 0.75);*/
-}
-
-.fff{
-	color: #fff;
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-	font-weight: bold;
 }
 
 .container{
@@ -408,47 +430,4 @@ h2.detail:before{
 
 .container h3{
 	margin: 0;
-}
-
-.container.misc{
-	display: table;
-	height: 220px;
-	padding: 0;
-	box-sizing: border-box;
-	border: none;
-}
-
-.container.misc div{
-	width: 33%;
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	box-sizing: border-box;
-	border-right: 1px solid #ccc;
-}
-
-.container.misc div:last-child{
-	border-right: none;
-}
-
-/* misc */
-.w200{
-	width: 150px !important;
-	margin-right: 0 !important;
-}
-
-.service_index{
-	width: 10em;
-	margin: 2px 1px;
-	background: #efefef;
-	color: #666;
-	border: 1px dotted #ccc;
-	border-radius: 3px;
-	font-size: 1.0em;
-}
-
-
-.service_index:hover{
-	background: #1da1da;
-	color: #fff;
 }

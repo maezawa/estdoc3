@@ -50,7 +50,7 @@
 			</fieldset>
 
 			<fieldset class="fl_left">
-				<legend class="notRequired">メールアドレス</legend>
+				<legend>メールアドレス</legend>
 				<input name="email" type="text" id="form_email">
 				<div class="error email">メールアドレスが正しく入力されていません</div>
 			</fieldset>

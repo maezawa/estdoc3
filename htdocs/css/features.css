@@ -19,18 +19,6 @@
 	margin: 0 auto !important;
 }
 
-.copy img{
-	width: 150px;
-	display: block;
-	float: left;
-	margin: 0 10px;
-}
-
-.copy div{
-	width: 758px;
-	float: left;
-}
-
 #List{
 	margin-bottom: -1em;
 }

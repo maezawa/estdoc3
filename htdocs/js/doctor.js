@@ -48,7 +48,7 @@
 				var time = data.body[0].Schedule[0].Available;
 				var i = 0;
 
-				time.reduce(function(v, w){
+				time.forEach(function(w){
 					var isHide = '';
 					i == 10 && $(that).append('<button class="button small green more">もっと見る</button>')
 						.on('click', function(e){

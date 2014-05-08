@@ -49,8 +49,8 @@
 
 					<!-- エリア名・駅名　テキスト -->
 					<h5>エリア名・駅名</h5>
-					<input type="hidden" name="Area" id="Area_" value="<?php echo @$_GET['Area']; ?>">
 					<input type="text" id="Area" class="inputArea" name="area" value="<?php echo @$_GET['area']; ?>">
+					<input type="hidden" name="Area" id="Area_" value="<?php echo @$_GET['Area']; ?>">
 
 					<!-- 最寄り駅からの徒歩 -->
 					<h5>最寄り駅からの徒歩</h5>
@@ -90,7 +90,7 @@
 					</ul>
 					<!-- /こだわり条件 -->
 
-					<button class="button detailSearch mt10" id="doDetailSearch">詳細条件で検索</button>
+					<button type="button" class="button detailSearch mt10" id="doDetailSearch">詳細条件で検索</button>
 				</form>
 			</div>
 		</nav>
@@ -160,11 +160,16 @@
 	<?php include($_->parts_dir. '/detailSearch.php'); ?>
 </section>
 
+<div id="toTop">
+	<img src="/img/toTop.png" width="32" height="35" alt=""><br>
+	ページトップへもどる
+</div>
+
 <!-- parts --><?php include($_->parts_dir. '/footer.php'); ?><!-- /parts -->
 <script type="text/javascript">
 	var markerData = <?php echo $templ['markerJson']; ?>;
 </script>
-<script src="/js/$ui.js"></script>
-<script src="/js/result.js"></script>
+<script async src="/js/$ui.js"></script>
+<script async src="/js/result.js"></script>
 </body>
 </html>

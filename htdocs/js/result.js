@@ -47,12 +47,12 @@
 
 				var day  = data.body[0].Schedule[0].Day;
 				var time = data.body[0].Schedule[0].Available;
+				var btn = '';
 
-				time.reduce(function(v, w){
-					//console.log(day + ':' + w);
-					var btn = '<a href="/doctor/reserve/index.php?publicId=' + iid + '&dt=' + day + ' ' + w + '" class="button rsv">' + w + '</a>';
-					$(that).append(btn);
+				time.forEach(function(w){
+					btn += '<a href="/doctor/reserve/index.php?publicId=' + iid + '&dt=' + day + ' ' + w + '" class="button rsv">' + w + '</a>';
 				});
+				$(that).append(btn);
 			}
 		});
 	};
@@ -169,7 +169,7 @@
 			$('div.pid' + iid).show();
 			$.ajax({
 				type: 'GET',
-				url: 'http://api.estdoc.jp/schedule/doctors',
+				url: '//api.estdoc.jp/schedule/doctors',
 				dataType: 'jsonp',
 				data: { id: iid, date: date},
 				success: function(data){
@@ -184,6 +184,50 @@
 		$('.show_timeTable').trigger('click');
 	});
 
+
+	$('button.detailSearch').on('click', function(e){
+		e.preventDefault();
+
+		var form = $(this).parent('form');
+
+		var o = {
+			form: form,
+			ajaxSend: form.serializeArray(),
+			sendData: form.serialize(),
+			api: '//api.estdoc.jp/geo'
+		};
+
+		if (o.ajaxSend[1].value != ''){
+			$.ajax({
+				type: 'GET',
+				url: o.api,
+				dataType: 'jsonp',
+				data: { name: o.ajaxSend[1].value },
+				success: function(data){
+					(data.body.length > 0) && form.children('input[name=Area]').val(data.body[0].Latlng);
+					var sendData = form.serialize();
+					$(form).submit();
+				}
+			});
+		}else{
+			$(form).submit();
+		}
+	});
+
+	// ページトップへ戻すボタン
+	$(window).on('scroll', function(){
+		var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		(scrollTop > 500) ? $('#toTop').show() : $('#toTop').hide();
+	});
+
+	$(window).on('resize', function(){
+		($(window).width() < 1250) ? $('#toTop').addClass('toTop_on') : $('#toTop').removeClass('toTop_on');
+	});
+
+	$('#toTop').on('click', function(e){
+		e.preventDefault();
+		$(window).scrollTop(0);
+	});
 
 //	$('#date').on('click', function(e){
 //		e.preventDefault();

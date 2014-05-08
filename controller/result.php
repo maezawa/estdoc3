@@ -99,7 +99,7 @@ namespace{
 			));
 			$json	= json_decode(file_get_contents($this->_->api. "/t_hospital/search?{$query}", false, $context), true);
 
-			//echo "<br>". $this->_->api. "/t_hospital/search?{$query}";
+			echo "<br>". $this->_->api. "/t_hospital/search?{$query}";
 			return $json;
 		}
 

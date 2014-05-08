@@ -111,34 +111,34 @@
 			<dl>
 				<dt>関東エリア</dt>
 				<dd>
-					<a href="/result/all/toukyouto/railway/yamanotesen/shinnjuku/">新宿</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/shibuya/">渋谷</a>／
-					<a href="/result/all/toukyouto/railway/toukaidouhonsen/yokohama/">横浜</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/tokyou/">東京駅／
-					<a href="/result/all/toukyouto/railway/yamanotesen/tokyo/">浅草</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/ueno/">上野</a>／
-					<a href="/result/all/toukyouto/railway/toukaidouhonsen/nakameguro/">中目黒</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/ebisu/">恵比寿</a>／
-					<a href="/result/all/toukyouto/railway/hibiyasen/ropponngi/">六本木</a>／
-					<a href="/result/all/toukyouto/railway/ginzasen/omotesanndou/">表参道</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/akihabara/">秋葉原</a>／
-					<a href="/result/all/toukyouto/railway/touzaisen/kagurazaka/">神楽坂</a>／
-					<a href="/result/all/toukyouto/railway/toeiooedosen/azabujuubann/">麻布十番</a>／
-					<a href="/result/all/toukyouto/railway/soubuhonsen/kinnshichou/">錦糸町</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/shinagawa/">品川</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/gotanda/">五反田</a>／
-					<a href="/result/all/toukyouto/railway/hibiyasen/tsukiji/">築地</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/ikebukuro/">池袋</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/shinnjuku/">人形町</a>／
-					<a href="/result/all/toukyouto/railway/tyuuousen/kichijoji/">吉祥寺</a>／
-					<a href="/result/all/toukyouto/railway/hibiyasen/kitasennju/">北千住</a>／
-					<a href="/result/all/toukyouto/railway/saikyousen/kawagoe/">川越</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/takadanobaba/">高田馬場</a>／
-					<a href="/result/all/toukyouto/railway/touzaisen/monnzennnakachou/">門前仲町</a>／
-					<a href="/result/all/toukyouto/railway/toeishinzyukusen/jinnbouchou/">神保町</a>／
-					<a href="/result/all/toukyouto/railway/tyuuousen/nakano/">中野</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/shinnbashi/">新橋</a>／
-					<a href="/result/all/toukyouto/railway/yamanotesen/hamamatsuchou/">浜松町</a>／
+					<a href="/result/all/toukyouto/railway/yamanotesen/shinnjuku/">新宿</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/shibuya/">渋谷</a>&nbsp;／
+					<a href="/result/all/kanagawaken/railway/toukaidouhonsen/yokohama/">横浜</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/toukyou/">東京駅</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/ginzasen/asakusa/">浅草</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/ueno/">上野</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/hibiyasen/nakameguro/">中目黒</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/ebishu/">恵比寿</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/hibiyasen/ropponngi/">六本木</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/ginzasen/omotesanndou/">表参道</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/akihabara/">秋葉原</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/touzaisen/kagurazaka/">神楽坂</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/toeiooedosen/azabujuubann/">麻布十番</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/soubuhonsen/kinnshichou/">錦糸町</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/shinagawa/">品川</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/gotanda/">五反田</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/hibiyasen/tsukiji/">築地</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/ikebukuro/">池袋</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/hibiyasen/ninngyouchou/">人形町</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/tyuuousen/kichijoji/">吉祥寺</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/hibiyasen/kitasennju/">北千住</a>&nbsp;／
+					<a href="/result/all/saitamaken/railway/saikyousen/kawagoe/">川越</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/takadanobaba/">高田馬場</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/touzaisen/monnzennnakachou/">門前仲町</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/toeishinzyukusen/jinnbouchou/">神保町</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/tyuuousen/nakano/">中野</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/shinnbashi/">新橋</a>&nbsp;／
+					<a href="/result/all/toukyouto/railway/yamanotesen/hamamatsuchou/">浜松町</a>&nbsp;／
 					<a href="/result/all/toukyouto/railway/toukyuutouyokosen/jiyuugaoka/">自由が丘</a>
 				</dd>
 
@@ -147,8 +147,8 @@
 
 				<dt>関西エリア</dt>
 				<dd>
-					<a href="/result/all/oosakafu/railway/hanshinhonsen/umeda/">梅田</a>／
-					<a href="/result/all/hyougoken/railway/koubesen/koube/">神戸</a>／
+					<a href="/result/all/oosakafu/railway/hanshinhonsen/umeda/">梅田</a>&nbsp;／
+					<a href="/result/all/hyougoken/railway/koubesen/koube/">神戸</a>&nbsp;／
 					<a href="/result/all/hyougoken/railway/koubeshieichikatetuyamatesen/sannnomiya/">三宮</a>
 				</dd>
 			</dl>

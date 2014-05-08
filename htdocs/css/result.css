@@ -319,7 +319,6 @@ dl.feature dt{
 
 /* タイムテーブル styles */
 aside.schedule{
-	/*display: none;*/
 	position: relative;
 	height: 0;
 	overflow-y: hidden;
@@ -424,7 +423,6 @@ aside.schedule{
 
 #consultationHours th:nth-child(n + 1):not(:nth-child(n + 6)){
 	background: #ccc;
-	/*background: rgba(131, 182, 137, 0.7);*/
 }
 
 #consultationHours th:nth-child(6){
@@ -438,7 +436,6 @@ aside.schedule{
 
 #consultationHours td:nth-child(n + 1):not(:nth-child(n + 6)){
 	background: #efefef;
-	/*background: rgba(131, 182, 137, 0.1);*/
 }
 
 #consultationHours td:nth-child(6){
@@ -568,7 +565,18 @@ a.filter{
 	background: transparent url('/img/map_verde.png') no-repeat;
 }
 
-.bgbleu{
-	width: 21px;
-	background: transparent url('/img/map_bleu.png') no-repeat;
+#toTop{
+	display: none;
+	position: fixed;
+	right: 10px;
+	bottom: 5%;
+	text-align: center;
+	color: #999;
+	font-size: 0.75em;
+	cursor: pointer;
+}
+
+.toTop_on{
+	right: auto !important;
+	left: 10px;
 }

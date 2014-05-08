@@ -1,6 +1,6 @@
 ;(function(){
 	var suggestData = [];
-	var ajaxComboBoxOption = 		{
+	var ajaxComboBoxOption = {
 		field:        'Word',
 		primary_key:  'Latlng'
 	};
@@ -48,7 +48,7 @@
 			form: form,
 			ajaxSend: form.serializeArray(),
 			sendData: form.serialize(),
-			api: 'http://api.estdoc.jp/geo'
+			api: '//api.estdoc.jp/geo'
 		};
 
 		if (o.ajaxSend[1].value != ''){

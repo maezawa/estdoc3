@@ -11,6 +11,7 @@
 	<!-- エリア名・駅名　テキスト -->
 	<h5>エリア名・駅名</h5>
 	<input type="text" id="Area" class="inputArea" name="area">
+	<input type="hidden" name="Area" id="Area_" value="<?php echo @$_GET['Area']; ?>">
 
 	<!-- 最寄り駅からの徒歩 -->
 	<h5>最寄り駅からの徒歩</h5>
@@ -50,5 +51,5 @@
 	</ul>
 	<!-- /こだわり条件 -->
 
-	<button class="button detailSearch mt10" id="doDetailSearch">詳細条件で検索</button>
+	<button type="button" class="button detailSearch mt10" id="doDetailSearch">詳細条件で検索</button>
 	</form></div>

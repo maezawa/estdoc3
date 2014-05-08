@@ -70,7 +70,6 @@ strong.span_tel{
 
 div.drProf,
 article{
-	/*border: 1px solid #ececec;*/
 	background: #fff;
 	padding: 10px !important;
 }
@@ -78,18 +77,6 @@ article{
 .comment{
 	visibility: hidden;
 	margin-top: 1em;
-}
-
-a.vote,
-a.interview{
-	margin-top: 10px;
-	display: block;
-	height: 15px;
-}
-
-a.vote{
-	padding-left: 0;
-	padding-right: 0;
 }
 
 button.moreHospital{
@@ -103,7 +90,8 @@ button.moreDoctor{
 	line-height: 1;
 }
 
-ul#feature li, .on_foot > span{
+ul#feature li,
+.on_foot > span{
 	border: 1px solid #1da1da;
 	color: #1da1da;
 	background: #f1fbff;
@@ -114,40 +102,14 @@ ul#feature li, .on_foot > span{
 	box-shadow: 0 0 4px rgba(29, 161, 218, 0.30) inset;
 }
 
-.info.container,
-.interview.container{
+.info.container{
 	width: 946px;
 	padding: 5px 0;
 	margin: 0;
 }
 
-.info > dl{
-	width: 40%;
-	/*border-radius: 3px;*/
-	/*border: 1px solid #eee;*/
-	padding: 5px;
-	margin-right: 10px;
-	float: left;
-}
-
-.info > dl > dd{
-	margin-left: 1em;
-}
-
-article h3{
-	font-weight: normal;
-}
-
 caption{
 	text-align: left;
-}
-
-div.detail{
-	border: 2px solid #0190d6;
-	border-radius: 0 0 3px 3px;
-	border-top: none;
-	background: #eaf8ff;
-	padding: 20px 10px 10px 10px !important;
 }
 
 .pic{
@@ -189,11 +151,6 @@ div.detail{
 	margin-left: 1em;
 }
 
-#timeTable{
-	width: 70%;
-	margin-right: 20px;
-}
-
 #map{
 	width: 320px;
 	height: 210px;
@@ -205,6 +162,7 @@ div.detail{
 	width: 100%;
 	font-size: 1em;
 	overflow-y: hidden;
+	margin-top: 30px;
 }
 
 #schedule th,
@@ -280,7 +238,6 @@ ul#doctorList{
 
 ul#doctorList li{
 	float: left;
-	/*margin-top: 2em;*/
 	overflow-y: visible;
 }
 
@@ -416,26 +373,4 @@ ul.thumb li:nth-child(n+2) img{
 	background: rgba(240, 241, 203, 0.4);
 	z-index: 80;
 	display: table;
-}
-
-#LightBox > div{
-	display:table-cell;
-	text-align:center;
-	vertical-align:middle;
-}
-
-#LightBox img{
-	padding: 5px;
-	border-radius: 5px;
-	box-shadow: 0 0 7px #aaa;
-	background: #fff;
-}
-
-#LightBox button{
-	display: inline-block;
-	text-align: right;
-	margin-top: 2em;
-	font-size: 1em;
-	height: auto !important;
-	padding: 9px 2em;
 }

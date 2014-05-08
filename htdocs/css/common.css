@@ -60,8 +60,6 @@ br{
 
 
 /* Header Styles */
-
-
 header{
 	border-bottom: 3px solid #1da1da;
 	background: #fff;
@@ -128,7 +126,7 @@ header > .container > .col2{
 }
 
 #fixedHeader form{
-	width: 52em;
+	width: 53em;
 	margin: 0 20px 0 auto;
 }
 
@@ -158,11 +156,7 @@ footer h6{
 
 footer ul{
 	line-height: 1.8;
-}
-
-footer li:before{
-	content: '■\00a0';
-	color: #fff;
+	margin-left: 1em;
 }
 
 footer .container{
@@ -177,17 +171,12 @@ footer .container{
 
 .footer_logo{
 	margin-right: 1em;
+	width: 216px;
 }
 
 .footer_phase{
 	flex: 1;
 }
-
-footer .bg_white{
-	background: #fff;
-	padding: 1em;
-}
-
 
 footer .col1_2{
 	width: 50%;
@@ -285,16 +274,8 @@ section.container > .container.block{
 	padding: 10px !important;
 }
 
-.m0{
-	margin: 0 !important;
-}
-
 .mt20{
 	margin-top: 20px !important;
-}
-
-.ml10{
-	margin-left: 10px !important;
 }
 
 .mt10{
@@ -313,20 +294,8 @@ section.container > .container.block{
 	text-align: center;
 }
 
-.c_both{
-	clear: both;
-}
-
 .block{
 	display: block;
-}
-
-.none{
-	display: none;
-}
-
-.red{
-	color: #cc0000;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -346,10 +315,9 @@ section.container > .container.block{
 	text-decoration: none;
 }
 
-.button.link:hover{
-	background: #1da1da;
-	color: #fff;
-	text-decoration: underline;
+.button:hover{
+	text-decoration: none;
+	background: #1fbff9;
 }
 
 .button.small{
@@ -366,6 +334,10 @@ section.container > .container.block{
 
 .button.green{
 	background: #94d146;
+}
+
+.button.green:hover{
+	background: #acef4b;
 }
 
 .button.navRsv{
@@ -407,18 +379,10 @@ section.container > .container.block{
 	background: #dcc072;
 }
 
-.button:hover{
-	text-decoration: none;
-	background: #1fbff9;
-}
 
 .button.close:hover{
 	background: #dfc0dd;
 	color: #fff;
-}
-
-.button.green:hover{
-	background: #acef4b;
 }
 
 .button.prev{
@@ -467,9 +431,6 @@ section.container > .container.block{
 	background: #1da1da;
 }
 
-.smallfont{
-	font-size: 0.9em;
-}
 
 /* UI::breadcrumb styles */
 ul#breadcrumb{
@@ -508,18 +469,17 @@ fieldset{
 	position: relative;
 	border: none;
 	margin-bottom: 0.5em;
-	/*text-align: center;*/
 }
 
 input[type="radio"]{
 	-webkit-appearance: initial;
-	-moz-webkit-appearance: initial;
-	-ms-webkit-appearance: initial;
-	-o-webkit-appearance: initial;
+	-moz-appearance: initial;
+	-ms-appearance: initial;
+	-o-appearance: initial;
 	appearance: initial;
 	-webkit-box-sizing: border-box;
 	position: relative;
-	display: block;
+	display: none;
 	float: left;
 }
 

@@ -43,7 +43,8 @@
 		var valid = false;
 		valid |= (last  == '') && !!$('.last').show();
 		valid |= (first == '') && !!$('.first').show();
-		valid |= (!(tel.match(/^0[0-9-]{11,}$/))) && !!$('.tel').show();
+		valid |= (!(tel.match(/^0[0-9]{9,11}$/))) && !!$('.tel').show();
+		valid |= (!(email.match(/[a-zA-Z0-9!$&amp;*.=^`|~#%'+\/?_{}-]+@([a-zA-Z0-9_-]+\.)+[a-zA-Z]{2,4}/))) && !!$('.email').show();
 
 		(!valid) && (function(){
 			$('.error').hide();
@@ -87,16 +88,14 @@
 		$('#memo').val(memo.replace(/\r?\n/g, "<br>"));
 		$('#dt').val(unixTime);
 		var send = $('#Reserve1').serialize();
-//		console.log(send);
 
 		$.ajax({
 			type: 'GET',
-			url: 'http://api.estdoc.jp/post_reservation',
+			url: '//api.estdoc.jp/post_reservation',
 			dataType: 'jsonp',
 			data: send,
 			success: function(data){
 				var res = data.body[0]; // res.status = { Error | Success }
-				console.log(res);
 
 				(res.status === 'Error') ?
 					(function(){
@@ -108,7 +107,6 @@
 						$('#NG').show();
 					})() :
 					(function(){	// レスポンス・ステータスがOKの場合
-						console.log(res);
 						$('<form/>', {action: '/doctor/reserve/complete.php', method: 'post'})
 							.append($('<input/>', {type: 'hidden', name: 'jeton', value: res.jetton}))
 							.appendTo($('body'))

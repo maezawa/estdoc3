@@ -25,6 +25,12 @@
 	// button#toggleDetail click event
 	$('#toggleDetail').on('click', function(){
 		var div = $('#detail');
+		var hour = $('#searchQuick #form_time').val();
+		$('#detail #selectCategory').val($('#searchQuick #selectCategory').val());
+		$('#DArea').val($('#QArea').val());
+		$('#DArea_').val($('#QArea_').val());
+		$('#hs' + hour).attr('checked', true);
+
 		div.toggleClass('show_detail');
 		$('#quick').toggle();
 		div.hasClass('show_detail') ? $(this).text('クイックサーチで検索') : $(this).text('詳しく条件指定して検索');
